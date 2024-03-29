@@ -1,4 +1,4 @@
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 /** Imports */
 const STATUS = require('./src/utils/httpStatus.js');
