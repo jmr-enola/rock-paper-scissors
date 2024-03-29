@@ -21,7 +21,10 @@
   },
   "homepage": "https://github.com/jmr-enola/rock-paper-scissors#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "compression": "^1.7.4",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
