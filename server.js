@@ -28,7 +28,6 @@ app.use(rateLimit({
 app.use(express.static('static'), express.text());
 
 app.post('/', (req, res, next) => {
-    console.log(req.body);
     const moves = ['rock', 'paper', 'scissors'];
 
     const gameResult = (move) => {

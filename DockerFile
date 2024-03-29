@@ -1,0 +1,11 @@
+FROM node:alpine as base
+
+WORKDIR /app/server
+
+COPY package.json ./
+
+RUN rm -rf node_modules && npm ci && npm cache clean --force
+
+COPY . .
+
+CMD ["npm", "run", "dev"]
