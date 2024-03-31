@@ -1,0 +1,12 @@
+steps:
+  # Remove preinstalled modules
+  - name: 'remove'
+    args: ['rm', '-rf', 'node_modules']
+  # Install production dependencies
+  - name: 'install'
+    args: ['npm', 'install', '--only=production']
+  # Clean
+  - name: 'clean'
+    args: ['npm', 'cache', 'clean', '--force',
+           '&&', 'env:NODE_ENV=production']
+
